@@ -1,6 +1,7 @@
 package com.example.demo.controller;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import com.example.demo.model.Exam;
 import com.example.demo.service.ExamService;
 
@@ -8,6 +9,7 @@ import jakarta.validation.Valid;
 
 import java.util.List;
 
+@CrossOrigin(origins = "http://localhost:5173")
 @RestController
 @RequestMapping("/api/exams")
 public class ExamController {
