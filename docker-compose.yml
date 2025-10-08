@@ -13,3 +13,6 @@ services:
 
 volumes:
   examdb-data:
+
+env_file:
+  - .env
